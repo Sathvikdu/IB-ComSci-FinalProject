@@ -21,11 +21,8 @@ class TicTacToe
     static Scanner globalScanner;
 
     //checkWinner method will decide the combination of three box given below.
-
     // It will check all the possible winning combination of the game.
-
     // returns X if X wins, O if O wins, D if the game is draw, N if the game continues.
-
     static char checkWinner()
     {
         for (int a = 0; a < 8; a++)
@@ -102,12 +99,14 @@ class TicTacToe
         {
             if (answer.equals("yes"))
             {
+                System.out.println();
                 // reset the board, turn, and winner
                 board = new char[9];
                 turn = 'X';
                 winner = 'N';
                 System.out.println("The board has been reset.");
                 System.out.println("Welcome back to 3x3 Tic Tac Toe!");
+                System.out.println();
 
                 // initialize the board
                 for (int a = 0; a < 9; a++)
@@ -118,13 +117,14 @@ class TicTacToe
                 System.out.println(player1Name + "'s turn; enter a slot number (1-9) to place X in:");
             } else if (answer.equals("no"))
             {
+                System.out.println();
                 // end the game
                 System.out.println("The game has ended. Thanks for playing!");
             } else
             {
                 // prompt the user for a valid input
                 System.out.println("Invalid input, please type either yes or no");
-                String newAnswer = globalScanner.nextLine().toLowerCase();
+                String newAnswer = globalScanner.next().toLowerCase();
                 triggerGame(newAnswer);
             }
 
@@ -157,8 +157,8 @@ class TicTacToe
         {
             board[a] = (char) (a + '1');
         }
-        System.out.println();
         System.out.println("Welcome to 3x3 Tic Tac Toe!");
+        System.out.println();
         printBoard();
 
         System.out.println("X will play first. Enter a slot number to place X in:");
@@ -176,7 +176,6 @@ class TicTacToe
                     if (numInput > 0 && numInput <= 9)
                     {
                         // this checks if the slot is already occupied
-
                         if (board[numInput - 1] != 'X' && board[numInput - 1] != 'O')
                         {
                             board[numInput - 1] = turn;
@@ -184,7 +183,6 @@ class TicTacToe
                             printBoard();
 
                             // now it is time to check for the winner
-
                             winner = checkWinner();
                             if (winner == 'X')
                             {

@@ -7,7 +7,7 @@
 
 ***Project Synopsis:***
 
-This Java program generates a game of tic tac toe. The game board is represented by a char array called "board." The array starts out with the numbers 1 through 9, and as the game goes on, Xs and Os are used in place of the numbers to represent the moves that the players have made.
+This Java program generates a game of TicTacToe. The game board is represented by a char array called "board." The array starts out with the numbers 1 through 9, and as the game goes on, Xs and Os are used in place of the numbers to represent the moves that the players have made.
 
 Overall, the program is well-structured, easy to understand, and efficient regarding resource management. Exception handling is also implemented to prevent the program from crashing due to invalid input and it's well-structured to handle edge cases. The program uses an array of strings to represent the board, which is efficient in terms of memory usage. The program uses a while loop to keep the game running until a winner is found or the game is a draw, which is efficient in terms of resource usage.
 

@@ -1,6 +1,7 @@
 # IB-ComSci-FinalProject
-Here you can find the Java code and the Documentation to go along with it.
-Documentation 
+Documentation
+
+
 Target assessment level: 
 
 The target assessment level of this work is 3.

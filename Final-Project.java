@@ -143,18 +143,16 @@ class TicTacToe
         winner = 'N';
 
         // now the user/users can input the player names, and they get assigned to X and O
-
         System.out.println("Enter player 1 name:");
         player1Name = globalScanner.nextLine();
         System.out.println("Enter player 2 name:");
         player2Name = globalScanner.nextLine();
         System.out.println();
-        // Assign X or O to players
 
+        // Assign X or O to players
         System.out.println(player1Name + " will be X and " + player2Name + " will be O.");
 
         // here the initialization the game board takes place
-
         for (int a = 0; a < 9; a++)
         {
             board[a] = (char) (a + '1');

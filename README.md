@@ -27,10 +27,13 @@ The game starts with a prompt asking player 1 for his/her name and then player 2
 ***Specification:***
 
 - The code is for a Tic Tac Toe game. It has a static char array called "board" that represents the game board, a static char variable called "turn" that keeps track of the current player's turn, a static char variable called "winner" that keeps track of the winner of the game, and two static String variables called "player1Name" and "player2Name" that store the names of the players.
-  
+- When a player enters a slot number to place their marker, this code checks to see if there is a winner after each turn (X or O). It specifically does this after the new move has been made to the board and the printBoard() method has been called. In order to determine whether there is a winner, a draw, or whether play should continue, the checkWinner() method is called and the returned value is checked against the values 'X', 'O', and 'D'. The user will be asked if they want to play again if there is a winner or a draw.
+
   - The Tic-Tac-Toe program allows two players to play the game on a 3x3 board.
   - The program prompts the players to enter a slot number between 1 and 9 to place their respective X or O on the board (after they enter their names and get assigned X and O).
   - The program checks for a winner by checking all possible winning combinations (horizontally, vertically and diagonally) after each player's turn so the game keeps going until there is a winner (and loser) or a draw.
+  
+- In this code, the "switch" statement is used to choose which three game board elements (stored in the char array "board") should be checked for a winning combination. A different potential winning combination corresponds to each case in the switch statement (e.g. the top row, the middle row, the diagonal from top-left to bottom-right, etc.). To iterate through all 8 potential winning combinations, the variable "a" is used as the argument for the switch statement. The variable "line," which is checked for the winning combination of 'XXX'or 'OOO', is assigned by the switch statement the set of elements that correspond to the current iteration.
 - If the game is a draw because the board is filled and no one wins, the program will print "It's a draw!". 
 - This code first checks if the result of the game is a draw or if one of the users won or if one of the users lost. When either one of these things happens, the code prompts the user to "[...] try again?" and waits for their input. If the input is "yes", it resets the board and turn variables and continues the game. If the input is "no", it prints “Thanks for playing!" and exits the game i.e. stops running the code with exit code 1.
 
@@ -59,7 +62,7 @@ The game starts with a prompt asking player 1 for his/her name and then player 2
 - The program uses an array of strings to represent the board, which is efficient in terms of memory usage.
 - The program uses a while loop to keep the game running until a winner is found or the game is a draw. This allows the program to run until the game is finished, and then exit with an exit code, avoiding unnecessary resource usage.
 - In the end, the globalScanner is closed with globalScanner.close().
-- The program uses the checkWinner method to check for a winner only when necessary, this avoids unnecessary computation, and thus improves the performance of the program.
+- The program uses the checkWinner method to check for a winner after every move when necessary, and thus improves the redundency and intelligence of the program.
 
 ***Personal experience:***
 

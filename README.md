@@ -17,10 +17,10 @@ Overall, the program is well-structured, easy to understand, and efficient regar
 - The triggerGame(String answer) method checks if the player wants to play again. If the answer is "yes", it resets the game board, sets the turn to X, and sets the winner to N. If the answer is "no", it prints "Thanks for playing!". If the answer is anything else, it prompts the player to enter a valid input.
 
 ***The class also has four static variables:***
-- board: a char array that represents the game board
-- turn: a char variable that represents whose turn it is, either X or O
-- winner: a char variable that represents the winner of the game, either X, O, D, or N
-- player1Name and player2Name, both strings represent the names of the players
+- board: a char array that represents the game board.
+- turn: a char variable that represents whose turn it is, either X or O.
+- winner: a char variable that represents the winner of the game, either X, O, D, or N.
+- player1Name and player2Name, both strings represent the names of the players (both of which are converted to uppercase to distinguish among other text around them).
 
 The game starts with a prompt asking player 1 for his name and player 2 for his name, and then it prints the initial state of the game board, with the numbers 1-9. Then it prompts the player whose turn it is to make a move by entering a number between 1-9. The program then checks for the winner after each move and keeps prompting the players until there is a winner. Finally, it will ask if the players want to play again.
 
@@ -30,7 +30,7 @@ The game starts with a prompt asking player 1 for his name and player 2 for his 
   
   - The Tic-Tac-Toe program allows two players to play the game on a 3x3 board.
   - The program prompts the players to enter a slot number between 1 and 9 to place their respective X or O on the board (after they enter their names and get assigned X and O).
-  - The program checks for a winner by checking all possible winning combinations (horizontally, vertically and diagonally) after each player's turn so the game keeps going until there is a winner or a draw.
+  - The program checks for a winner by checking all possible winning combinations (horizontally, vertically and diagonally) after each player's turn so the game keeps going until there is a winner (and loser) or a draw.
 - If the game is a draw because the board is filled and no one wins, the program will print "It's a draw!". 
 - This code first checks if the result of the game is a draw or if one of the users won or if one of the users lost. When either one of these things happens, the code prompts the user to try again and waits for their input. If the input is "yes", it resets the board and turn variables and continues the game. If the input is "no", it prints “Thanks for playing!" and exits the game i.e. stops running the code.
 
@@ -63,5 +63,3 @@ The game starts with a prompt asking player 1 for his name and player 2 for his 
 ***Personal experience:***
 
 Initially, I had no intention of making a Tic-Tac-Toe game in Java, it was just an idle thought and upon research, I found it fitting with what we have covered in this course and then I decided to go through with this. At first, it wasn't as hard as it would soon get, I had to do a bunch of research and hours of error correction. This code isn't that impressive to professionals but only having had the knowledge I gained from this course and some websites that provide information, I had nothing else going into this, and I believe I have tried my best and ended up with a presentable product, as “nothing is perfect”. I have gained a lot of useful knowledge that otherwise wouldn’t be of any interest to me if it wasn’t for this project. This has undoubtedly been the hardest part of this computer science course, and reflecting upon it has left me with a positive note: I can now comfortably say that I have put in real effort to make this code work and I am very happy that I got there in the end, even though I questioned my life choices and wanted to scrap this idea many, many times.
-
-

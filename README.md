@@ -14,7 +14,7 @@ Overall, the program is well-structured, easy to understand, and efficient regar
 ***There are several methods in the TicTacToe class:***
 - The checkWinner() method checks all the possible winning combinations of the game, and returns the character X if player X wins, the character O if player O wins, the character D if the game is a draw, and the character N if the game is still ongoing.
 - The printBoard() method prints the current state of the game board to the console.
-- The triggerGame(String answer) method checks if the player wants to play again. If the answer is "yes", it resets the game board, sets the turn to X, and sets the winner to N. If the answer is "no", it prints "Thanks for playing!". If the answer is anything else, it prompts the player to enter a valid input.
+- The triggerGame(String answer) method checks if the player wants to play again. If the answer is "yes", it resets the game board, sets the turn to X, and sets the winner to N (check Java code for clarification). If the answer is "no", it prints "Thanks for playing!". If the answer is anything else, it prompts the player to enter a valid input.
 
 ***The class also has four static variables:***
 - board: a char array that represents the game board.

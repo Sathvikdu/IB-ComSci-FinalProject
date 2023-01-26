@@ -40,9 +40,13 @@ The game starts with a prompt asking player 1 for his/her name and then player 2
 ***Correctness and Exception Handling:***
 
 - The program uses an array of strings to represent the board and the checkWinner() method to check for a winner. This method checks all possible winning combinations, making the program work correctly.
+
   - The code also uses the printBoard() method to print out the current status of the board and the triggerGame() method to check if the player wants to play again.
+  
 - The Main method uses a try-catch block. The program uses exception handling to catch any input that is not an integer (or a String--yes or no-- in case the game has ended and the user is prompted with the "[...] try again?" promt), this will prevent the program from crashing due to invalid input and prompt the user again to input a valid integer (or String).
+
   - The triggerGame() method uses a try-catch block as well; to catch any exceptions that may occur when the player inputs their answer. If an exception is caught, the code prompts the player to enter their answer again.
+  
 - The program is tested for typical input and works correctly for all test cases. The program can handle edge cases such as invalid inputs, and it's able to check for all possible winning combinations.
 
 ***Code Clarity:***
@@ -52,6 +56,7 @@ The game starts with a prompt asking player 1 for his/her name and then player 2
 - The program makes use of comments to provide a short and concise definition of the purpose(s) of certain sections of the code, making it easy to understand the logic behind the program.
 - The program flow is split into meaningful functions in different locations to avoid confusion. 
 - Upon taking a look at the code, one can see that comments have been added to the code to provide a clear explanation of what each function and block of code is doing. 
+
   - The checkWinner method checks for the winner and the printBoard method prints out the game board. 
   - The Main method runs the game loop and handles user input, exception handling, and game logic.
   - The triggerGame() method prompts the user if they want to play the game again.

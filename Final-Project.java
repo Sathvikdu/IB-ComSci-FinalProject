@@ -1,5 +1,5 @@
+// Enlarge the run box for optimal experience
 import java.util.*;
-
 class TicTacToe
 {
     // char array to keep track of the game board
@@ -123,7 +123,7 @@ class TicTacToe
             } else
             {
                 // prompt the user for a valid input
-                System.out.println("Invalid input, please type either yes or no");
+                System.out.println("Invalid input. Please type either yes or no");
                 String newAnswer = globalScanner.next().toLowerCase();
                 triggerGame(newAnswer);
             }
@@ -150,7 +150,7 @@ class TicTacToe
         System.out.println();
 
         // Assign X or O to players
-        System.out.println(player1Name + " will be X and " + player2Name + " will be O.");
+        System.out.println(player1Name.toUpperCase() + " will be X and " + player2Name.toUpperCase() + " will be O.");
 
         // here the initialization the game board takes place
         for (int a = 0; a < 9; a++)
@@ -161,7 +161,7 @@ class TicTacToe
         System.out.println();
         printBoard();
 
-        System.out.println("X will play first. Enter a slot number to place X in:");
+        System.out.println("X ("+player1Name.toUpperCase()+") will play first. Enter a slot number to place X in:");
 
         // this is where the Game Loop is declared
         // this is the main game loop, the game will continue until the winner variable is not equal to N

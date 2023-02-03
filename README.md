@@ -37,6 +37,12 @@ The game starts with a prompt asking player 1 for his/her name and then player 2
 - If the game is a draw because the board is filled and no one wins, the program will print "It's a draw!". 
 - This code first checks if the result of the game is a draw or if one of the users won or if one of the users lost. When either one of these things happens, the code prompts the user to "[...] try again?" and waits for their input. If the input is "yes", it resets the board and turn variables and continues the game. If the input is "no", it prints “Thanks for playing!" and exits the game i.e. stops running the code with exit code 1.
 
+  ![image](https://user-images.githubusercontent.com/123651402/216565382-c6abfa13-f2d8-4232-b73d-430ed7a5f82c.png)
+
+  ![image](https://user-images.githubusercontent.com/123651402/216567610-d1d714e0-af4f-4efd-bcdc-9a0980626c87.png)
+  
+    ![image](https://user-images.githubusercontent.com/123651402/216568003-f7920be0-a199-4bb0-a124-4ce68d2795f3.png)
+
 ***Correctness and Exception Handling:***
 
 - The program uses an array of strings to represent the board and the checkWinner() method to check for a winner. This method checks all possible winning combinations, making the program work correctly.
@@ -48,7 +54,11 @@ The game starts with a prompt asking player 1 for his/her name and then player 2
   - The triggerGame() method uses a try-catch block as well; to catch any exceptions that may occur when the player inputs their answer. If an exception is caught, the code prompts the player to enter their answer again.
   
 - The program is tested for typical input and works correctly for all test cases. The program can handle edge cases such as invalid inputs, and it's able to check for all possible winning combinations.
-
+  
+  ![image](https://user-images.githubusercontent.com/123651402/216566844-8013cf81-b093-4452-b397-5d3ea51f398c.png)
+  
+  ![image](https://user-images.githubusercontent.com/123651402/216567195-8817d9b4-962f-4082-b022-27b6e015c40e.png)
+   
 ***Code Clarity:***
 
 - The program uses proper variable and method naming conventions, making it easy to understand the purpose of each variable and method.
